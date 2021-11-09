@@ -13,6 +13,7 @@ function init() {
 }
 
 function mintaszovegF() {
+    
     let m = document.getElementById("mintaszovegId").value;
     
     if (m.replaceAll(' ', '') == "") {
@@ -25,18 +26,21 @@ function mintaszovegF() {
 }
 
 function betumeretF() {
+
     let b = document.getElementById("betumeretId").value;
     
     document.getElementById("szoveg").style.fontSize = b + "pt";
 }
 
 function szovegszinF() {
+
     let s = document.getElementById("szovegszinId").value;
 
     document.getElementById("szoveg").style.color = s;
 }
 
 function hatterszinF() {
+
     let s = document.getElementById("hatterszinId").value;
 
     document.getElementById("elonezet").style.backgroundColor = s;
@@ -51,5 +55,5 @@ function alaphelyzetF() {
     document.getElementById("szoveg").style.color = "";
     document.getElementById("hatterszinId").value = "";
     document.getElementById("elonezet").style.backgroundColor = "";
-    
+
 }

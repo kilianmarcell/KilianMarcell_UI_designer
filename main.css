@@ -1,18 +1,26 @@
 #alap {
+
     width: 30%;
     margin: auto;
+
 }
 
 #bemenet {
+
     background-color: rgb(238, 238, 238);
     border-radius: 20px;
     padding: 10px;
+
 }
 
 #elonezet {
+    
     padding: 10px;
+
 }
 
 #hiba {
+
     color: red;
+
 }
