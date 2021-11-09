@@ -36,6 +36,9 @@ function szovegszinF() {
 }
 
 function hatterszinF() {
+    let s = document.getElementById("hatterszinId").value;
+
+    document.getElementById("elonezet").style.backgroundColor = s;
 }
 
 function alaphelyzetF() {
