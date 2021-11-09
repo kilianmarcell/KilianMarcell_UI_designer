@@ -91,7 +91,7 @@ function kedvencekF() {
 
 }
 
-class Kedvenc {
+/*class Kedvenc {
 
     #bmeret;
     #szovegSzin;
@@ -114,4 +114,4 @@ class Kedvenc {
     get hatterSzin() {
         return this.#hatterSzin;
     }
-}
+}*/
