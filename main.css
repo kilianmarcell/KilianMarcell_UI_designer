@@ -16,7 +16,7 @@
 input {
 
     width: 100%;
-    
+
 }
 
 #elonezet {
@@ -36,4 +36,10 @@ input {
     display: block;
     margin: auto;
 
+}
+
+#szoveg {
+
+    text-align: center;
+    
 }
