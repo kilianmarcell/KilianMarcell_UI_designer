@@ -13,16 +13,21 @@ function init() {
 }
 
 function mintaszovegF() {
-    
+
     let m = document.getElementById("mintaszovegId").value;
     
     if (m.replaceAll(' ', '') == "") {
+
         document.getElementById("hiba").innerHTML = "A mintaszöveg nem lehet üres!";
         document.getElementById("szoveg").innerHTML = m;
+
     } else {
+        
         document.getElementById("hiba").innerHTML = "";
         document.getElementById("szoveg").innerHTML = m;
+        
     }
+
 }
 
 function betumeretF() {
@@ -30,6 +35,7 @@ function betumeretF() {
     let b = document.getElementById("betumeretId").value;
     
     document.getElementById("szoveg").style.fontSize = b + "pt";
+
 }
 
 function szovegszinF() {
@@ -37,6 +43,7 @@ function szovegszinF() {
     let s = document.getElementById("szovegszinId").value;
 
     document.getElementById("szoveg").style.color = s;
+
 }
 
 function hatterszinF() {
@@ -44,6 +51,7 @@ function hatterszinF() {
     let s = document.getElementById("hatterszinId").value;
 
     document.getElementById("elonezet").style.backgroundColor = s;
+
 }
 
 function alaphelyzetF() {
