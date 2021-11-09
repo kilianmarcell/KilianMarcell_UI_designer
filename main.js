@@ -43,4 +43,13 @@ function hatterszinF() {
 }
 
 function alaphelyzetF() {
+    
+    document.getElementById("mintaszovegId").value = "";
+    document.getElementById("betumeretId").value = "";
+    document.getElementById("szoveg").innerHTML = "";
+    document.getElementById("szovegszinId").value = "";
+    document.getElementById("szoveg").style.color = "";
+    document.getElementById("hatterszinId").value = "";
+    document.getElementById("elonezet").style.backgroundColor = "";
+    
 }
