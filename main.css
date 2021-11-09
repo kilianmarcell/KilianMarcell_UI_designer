@@ -1,4 +1,4 @@
-#alap {
+.alap {
 
     width: 30%;
     margin: auto;
@@ -31,7 +31,7 @@ input {
 
 }
 
-#alaphelyzetGomb {
+.gombok {
 
     display: block;
     margin: auto;

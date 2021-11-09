@@ -9,6 +9,7 @@ function init() {
     document.getElementById("szovegszinId").addEventListener("input", szovegszinF);
     document.getElementById("hatterszinId").addEventListener("input", hatterszinF);
     document.getElementById("alaphelyzetGomb").addEventListener("click", alaphelyzetF);
+    document.getElementById("kedvencekGomb").addEventListener("click", kedvencekF);
 
     document.getElementById("mintaszovegId").value = "Árvíztűrő tükörfúrógép";
     document.getElementById("szoveg").innerHTML = "Árvíztűrő tükörfúrógép";
@@ -71,4 +72,46 @@ function alaphelyzetF() {
     document.getElementById("hatterszinId").value = "#FFFFFF";
     document.getElementById("elonezet").style.backgroundColor = "white";
 
+}
+
+let k = [];
+
+function kedvencekF() {
+
+    let bMeret = document.getElementById("betumeretId").value;
+    let szovegSzin = document.getElementById("szovegszinId").value;
+    let hatterSzin = document.getElementById("hatterszinId").value;
+
+    let ujK = new Kedvenc(bMeret, szovegSzin, hatterSzin);
+
+    let b = document.createElement("button");
+    b.innerHTML = k.length + 1 + ". kedvenc";
+    k += [ujK];
+    document.getElementById("kedvencek").appendChild(b);
+
+}
+
+class Kedvenc {
+
+    #bmeret;
+    #szovegSzin;
+    #hatterSzin;
+
+    constructor(bMeret, szovegSzin, hatterSzin) {
+        this.#bMeret = bMeret;
+        this.#szovegSzin = szovegSzin;
+        this.#hatterSzin = hatterSzin;
+    }
+
+    get bMeret() {
+        return this.#bmeret;
+    }
+    
+    get szovegSzin() {
+        return this.#szovegSzin;
+    }
+    
+    get hatterSzin() {
+        return this.#hatterSzin;
+    }
 }
