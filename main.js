@@ -30,6 +30,9 @@ function betumeretF() {
 }
 
 function szovegszinF() {
+    let s = document.getElementById("szovegszinId").value;
+
+    document.getElementById("szoveg").style.color = s;
 }
 
 function hatterszinF() {
