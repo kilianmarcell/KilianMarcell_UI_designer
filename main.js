@@ -15,7 +15,7 @@ function init() {
 function mintaszovegF() {
     let m = document.getElementById("mintaszovegId").value;
     
-    if (m == "" || m.replaceAll(' ', '') == "") {
+    if (m.replaceAll(' ', '') == "") {
         document.getElementById("hiba").innerHTML = "A mintaszöveg nem lehet üres!";
         document.getElementById("szoveg").innerHTML = m;
     } else {
