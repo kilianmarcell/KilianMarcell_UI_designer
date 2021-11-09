@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Designer</title>
+    <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <div>
-        <input type="text" id="mintaszovegId">
+    <div id="alap">
+        <p>Mintaszöveg:</p>
+        <input type="text" id="mintaszovegId"><span id="mintaszovegHibaUzenet">
+        </span>
+        <p>Betűméret:</p>
         <input type="text" id="betumeretId">
+        <p>Szövegszín:</p>
         <input type="color" id="szovegszinId">
+        <p>Háttérszín:</p>
         <input type="color" id="hatterszinId">
     </div>
 </body>
